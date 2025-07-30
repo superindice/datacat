@@ -1,0 +1,27 @@
+#dclogo{
+    width: 150px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+body{
+   background:linear-gradient(orange,purple) ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+button{
+    margin: 15px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: solid;
+    border: 5px;
+    font-size: 1.5rem;
+    border-color: black;
+    background-color: hsl(120, 100%, 50%);
+
+}
+button:hover{
+    background-color: hsl(120, 100%, 45%); 
+}
