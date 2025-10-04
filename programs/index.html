@@ -215,7 +215,16 @@ body{
    </a>
        </div>
 
+<div id="datacat">
+<img class="pt" src="../images/favicon.ico">
+  <h2 class="para">Datacat App</h2>
+     <a href="">
 
+          <button class="down" onclick="datacat()">Download</button>
+     </a>
+
+     
+</div>
 
        <script>
         function wco(){
@@ -242,8 +251,18 @@ body{
         else if (ww == "info")
           alert("Ultisearch is a browser")
         }
+
+         function datacat(){
+        const wwww = window.prompt("Enter w to download for windows, info for more info")
+        if (wwww == "w"){
+        console.log("proceeding")
+        }
+        else if (wwww == "info")
+          alert("App version of the website")
+        }
         
        </script>
        </body>
        
 </html>
+
