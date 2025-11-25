@@ -1,0 +1,23 @@
+{
+    "name": "Datacat",
+    "short_name": "Datacat",
+    "description": "Datacat database",
+    "icons": [
+        {
+            "src": "dclogo.png",
+            "sizes": "32x32",
+            "type": "image/png"
+            
+        },
+        
+        {
+            "src": "dclogo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "https://superindice.github.io/datacat/",
+    "display": "standalone",
+    "theme_color": "#ffa500",
+    "background_color": "#ADD8E6"
+}
