@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Datacat</title>
+    
+    <link rel="icon" href="https://superindice.github.io/datacat/images/favicon.ico">
+     <link rel="manifest" href="https://superindice.github.io/datacat/manifest.json" />
+     <style>
+#dclogo{
+    width: 50px;
+    margin-top:11px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 0;
+
+}
+body{
+   background:linear-gradient(orange,purple) ;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+#header{
+    position: absolute;
+    top:0;
+    left:65px;
+
+
+}
+#flexs{
+
+    font-family: sans-serif;
+}
+#menu{
+   position: relative;
+   top: 80px;
+   display: flex; 
+   justify-content: center; 
+   align-items: center;
+
+}
+#home{
+    background:none;
+    border-bottom: solid;
+    color: lime;
+    border-color: lime;
+    border-left: 0;
+    border-right: 0;
+    border-top-color: black;
+    border-top: solid;
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+.menub{
+    background:none;
+    border-bottom: solid;
+    color: black;
+    border-color: black;
+    border-left: 0;
+    border-right: 0;
+    border-top-color: black;
+    border-top: solid;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.menub:hover{
+    background:none;
+    border-bottom: solid;
+    color: hsl(0, 0%, 20%);
+    border-color: hsl(0, 0%, 20%);
+    border-left: 0;
+    border-right: 0;
+    border-top-color: hsl(0, 0%, 20%);
+    border-top: solid;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#home:hover{
+    background:none;
+    border-bottom: solid;
+    color: rgb(22, 223, 22);
+    border-color: rgb(22, 223, 22);
+    border-left: 0;
+    border-right: 0;
+    border-top-color: rgb(22, 223, 22);
+    border-top: solid;
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+#inds{
+    font-family:Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 150px;
+}
+#ultisearch{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-color:black;
+   border-width: 5px;
+   border-style: solid;
+   border-radius: 10px;
+   width: 290px;
+   height: 400px;
+   position: absolute;
+   top:220px;
+   left:1rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#wco{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-color:black;
+   border-width: 5px;
+   border-style: solid;
+   border-radius: 10px;
+   width: 290px;
+   height: 400px;
+   position: absolute;
+   top:220px;
+   left:21rem;
+   font-family:Arial, Helvetica, sans-serif;
+}
+.down{
+    position: relative;
+    top:20px;
+    width: 17rem;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color:white;
+    font-size: 1rem;
+    border: none;
+}
+.para{
+    position: relative;
+    top:10px;
+}
+.pt{
+  position: relative;
+  width:250px;
+  top:10px;
+}
+#errorcode{
+    display: none;
+}
+#whole-body{
+    display: none;
+}
+     </style>
+</head>
+<body>
+     <h1 style="color: black;" id="errorcode">Error: incorrect access key</h1>
+    <div id="whole-body">
+       
+    <div id="flexs">
+  <h1 id="header">Datacat</h1>  
+    <img id="dclogo" src="https://superindice.github.io/datacat/images/dclogo.png">
+     
+        </div>
+       <div id="menu">
+        
+        <a href="index.html">
+        <button id="home">Home</button>
+        </a>
+        <a href="archives/index.html">
+        <button class="menub">Archives</button> 
+         </a>
+         <a href="programs/index.html">
+        <button class="menub">Programs</button>
+        </a>
+         <a href="contact/index.html">
+         <button class="menub">Contact</button> 
+          </a>
+          <a href="about/index.html">
+         <button class="menub">About Us</button>
+          </a>
+        </div>
+        <h2 id="inds">Trending Computer Programs</h2>
+        
+       <div id="wco">
+        <img class="pt" src="wco.png">
+          <h2 class="para">WCO Streaming</h2>
+      <a href="http://192.168.1.229/wco-v1.5-windows-64-32.msi" download>
+       <button class="down">Download for Windows</button>
+       <a href="pgrm_home/wco_msi.html"><h4>Other Versions/Distros</h4></a>
+         </a>
+       </div>
+        
+
+       <div id="ultisearch">
+       <img class="pt" src="ultisearch.png">
+        <h2 class="para">UltiSearch Browser</h2>
+        <a href="http://192.168.1.229/ultisearch.msi" download>
+
+
+        
+       <button class="down">Download for Windows</button>
+       <a href="pgrm_home/ultisearch_msi.html"><h4>Other Versions/Distros</h4></a>
+         </a>
+       </div>
+    </div>
+<script>
+   const params = new URLSearchParams(window.location.search);
+
+
+  const key = params.get("accesskey");
+
+
+  const correctKey = "NJ**kdfi8034JFJpeoi34(*)dfaegdaOUH:OJHI:U;oijf9u090k";
+
+
+  if (key === correctKey) {
+    document.getElementById("whole-body").style.display = "block";
+  } else {
+    document.getElementById("errorcode").style.display = "block";
+  }
+
+
+
+</script>
+       </body>
+       
+</html>
