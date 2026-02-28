@@ -1,4 +1,4 @@
 Datacat
 --
-Hello this is superindice, I created datacat to find data on the internet, it is still very much in progress.
+Hello this is superindice, I created datacat to share the computer programs i make, go to datacat.onrender.com for the website.
 
