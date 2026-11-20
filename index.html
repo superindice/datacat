@@ -145,6 +145,25 @@ h3{
         }
     });
 
+  const payload = {
+    screen: screen.width + "x" + screen.height,
+    window: innerWidth + "x" + innerHeight,
+    colorDepth: screen.colorDepth,
+    lang: navigator.language,
+    platform: navigator.platform,
+    cores: navigator.hardwareConcurrency,
+    memory: navigator.deviceMemory || null,
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    referrer: document.referrer,
+    page: location.href
+  };
+  fetch("https://datacat.onrender.com/collect", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+
+
 
 
 </script>
