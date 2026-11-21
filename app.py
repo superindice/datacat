@@ -147,7 +147,7 @@ h3{
      </style>
 </head>
 <body>
-<h1>PASSWORD is admin, usr is the same, this pg is under dev :)</h1>
+<h1 style='display: flex; flex-direction: colomen; align-items: center;'>PASSWORD is admin, usr is the same, this pg is under dev :)</h1>
     <div id="flexs">
   <h1 id="header">Datacat</h1>  
     <img id="dclogo" src="https://superindice.github.io/datacat/images/dclogo.png">
